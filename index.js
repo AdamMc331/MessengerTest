@@ -28,6 +28,6 @@ app.get('/webhook/', function(req, res) {
 })
 
 // Start server
-app.listen(app.get('port', function() {
+app.listen(app.get('port'), function() {
 	console.log('running on port', app.get('port'))
-}))
+})
